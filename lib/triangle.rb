@@ -14,6 +14,8 @@ class Triangle
   def kind
     if !valid?
       raise TriangleError
+      resue TriangleError => error 
+      puts.error
     elsif @a==@b && @b==@c
       result = :equilateral
     elsif @a==@b || @a==@c || @b==@c
