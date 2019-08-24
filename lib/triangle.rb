@@ -14,8 +14,6 @@ class Triangle
   def kind
     if !valid?
       raise TriangleError
-      resue TriangleError => error 
-      puts.error.message 
     elsif @a==@b && @b==@c
       result = :equilateral
     elsif @a==@b || @a==@c || @b==@c
@@ -29,10 +27,6 @@ class Triangle
 end
 
 class TriangleError < StandardError
-  def message
-      "you must give the get_married method an argument of an instance of the person class!"
-    end
-  
 end
 
 
