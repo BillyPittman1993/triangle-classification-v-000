@@ -13,7 +13,6 @@ class Triangle
 
   def kind
     if !valid?
-      raise TriangleError
     elsif @a==@b && @b==@c
       result = :equilateral
     elsif @a==@b || @a==@c || @b==@c
@@ -21,7 +20,7 @@ class Triangle
     else
       result = :scalene
     end
-    result
+    result 
   end
 
 end
