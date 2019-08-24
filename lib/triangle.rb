@@ -15,7 +15,7 @@ class Triangle
     if !valid?
       raise TriangleError
       resue TriangleError => error 
-      puts.error
+      puts.error.message 
     elsif @a==@b && @b==@c
       result = :equilateral
     elsif @a==@b || @a==@c || @b==@c
