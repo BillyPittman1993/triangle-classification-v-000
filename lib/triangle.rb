@@ -20,7 +20,7 @@ class Triangle
     else
       result = :scalene
     end
-    result  raise TriangleError
+    raise TriangleError
   end
 
 end
